@@ -9,6 +9,15 @@ html{
     /* permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
+#app{
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 2px;
+}
+#app:hover{
+    color: rgb(151, 247, 7);
+    transition: color 0.3s;
+}
 /* MENU */
 .contenedor-header{
     background: #1e2326;
