@@ -157,6 +157,13 @@ html{
 .sobremi .fila .col ul li{
     margin: 12px 0;
 }
+.git{
+    text-decoration: none;
+    color: #fff;
+}
+.git:hover{
+    color: #5471f3;
+}
 .sobremi .fila .col ul li strong{
     display: inline-block;
     color: #5471f3;
@@ -276,6 +283,8 @@ html{
     right: -15px;
     font-size: 14px;
 }
+
+
 /* Estas clases se agregaran dinamicamente mediante javascript */
 .skills .skill .javascript{
     width: 0%;
@@ -283,9 +292,8 @@ html{
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 80%;}
 }
-
 .skills .skill .htmlcss{
     width: 0%;
     animation: 2s htmlcss forwards;
@@ -294,6 +302,48 @@ html{
     0%{width: 0%;}
     100%{width: 89%;}
 }
+.skills .skill .react{
+    width: 0%;
+    animation: 2s react forwards;
+}
+@keyframes react {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+.skills .skill .python{
+    width: 0%;
+    animation: 2s python forwards;
+}
+@keyframes python {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.skills .skill .java{
+    width: 0%;
+    animation: 2s java forwards;
+}
+@keyframes java {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+.skills .skill .mysql{
+    width: 0%;
+    animation: 2s mysql forwards;
+}
+@keyframes mysql {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.skills .skill .git{
+    width: 0%;
+    animation: 2s git forwards;
+}
+@keyframes git {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+
 /* SECCION PORTFOLIO */
 .portfolio{
     background-color: #252A2E;
@@ -490,7 +540,6 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
-       
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
@@ -558,5 +607,33 @@ footer .arriba{
     }
     .contacto .fila .col{
         width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: block;
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
     }
 }

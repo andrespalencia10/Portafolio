@@ -23,6 +23,11 @@ function efectoHabilidades(){
         let habilidades = document.getElementsByClassName("progreso");
         habilidades[0].classList.add("htmlcss");
         habilidades[1].classList.add("javascript");
+        habilidades[2].classList.add("react");
+        habilidades[3].classList.add("python");
+        habilidades[4].classList.add("java");
+        habilidades[5].classList.add("mysql");
+        habilidades[6].classList.add("git");
     }
 }
 
